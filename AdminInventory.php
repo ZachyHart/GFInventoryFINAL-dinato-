@@ -110,20 +110,6 @@ if (isset($_GET["editproduct"])) {
                 </form>
             </div>
 
-            <!-- Sort by Category dropdown -->
-            <div class="dropdown mx-auto">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="sortCategoryDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Sort by Category
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="sortCategoryDropdown">
-
-                    <li><a class="dropdown-item" href="#">Category 1</a></li>
-                    <li><a class="dropdown-item" href="#">Category 2</a></li>
-                    <li><a class="dropdown-item" href="#">Category 3</a></li>
-
-                </ul>
-            </div>
             <button class="btn btn-primary btn-custom-position" type="button" data-bs-toggle="modal"
                 data-bs-target="#addProductModal">ADD PRODUCT</button>
             <div class="container">
@@ -158,9 +144,9 @@ if (isset($_GET["editproduct"])) {
                                     </div>
                                     <div class="col-md-9 col-lg-10">
                                         <div class="card-body">
-                                            <p class="card-text"><small class="text-category">
+                                        <span class="product-category">
                                                     <?php echo $product_category; ?>
-                                                </small></p>
+                                                    </span>
                                             <h5 class="card-title">
                                                 <?php echo $product_name; ?>
                                             </h5>
