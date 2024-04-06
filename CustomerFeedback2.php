@@ -120,8 +120,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-primary" onclick="submitForm()">Yes</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">NO</button>
+                    <button type="button" class="btn btn-primary" onclick="submitForm()">YES</button>
                 </div>
             </div>
         </div>

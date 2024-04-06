@@ -104,7 +104,7 @@ if (isset($_GET['reply'])) {
                                         <textarea class="form-control reply" id="reply" name="reply"
                                             rows="3"><?php echo $row['reply']; ?></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-submit">Reply</button>
+                                    <button type="submit" class="btn btn-primary">REPLY</button>
                                 </form>
                             </div>
                         </div>

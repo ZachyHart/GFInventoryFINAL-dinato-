@@ -67,9 +67,9 @@ include_once './helpers/session_helper.php';
             </div>
             <div class="row">
             <div class="col-md-6 mx-auto">
-                    <form method="GET" class="d-flex">
-                        <input type="text" class="form-control me-2" name="search" placeholder="Search products...">
-                        <button type="submit" class="btn btn-primary">Search</button>
+            <form method="GET" class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" name="search" placeholder="Search products..."required>
+                        <button type="submit" class="btn btn-search">Search</button>
                     </form>
                 </div>
             </div>
@@ -88,11 +88,7 @@ include_once './helpers/session_helper.php';
                 <div class="col">
                     <div class="card product_card">
                         <div class="row justify-content-start">
-                            <div class="col-12">
-                                <span class="badge bg-info">
-                                    <?php echo $row['product_category']; ?>
-                                </span>
-                            </div>
+                            
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -100,22 +96,18 @@ include_once './helpers/session_helper.php';
                                     class="card-img-top product_image" alt="<?php echo $row['product_name']; ?>">
                             </div>
                             <div class="col-12">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">
-                                        <?php echo $row['product_name']; ?>
-                                    </h5>
-                                    <div class="price_stock">
-                                        <h1 class="price_text">
-                                            ₱ <?php echo $row['price']; ?>
-                                        </h1>
-                                        <h1 class="stock_text">
-                                            In stock: <?php echo $row['stock']; ?>
-                                        </h1>
-                                    </div>
-                                    <hr />
-                                    <!-- Add your button or action here -->
-                                </div>
-                                    </div>
+                            <div class="card-body">
+        <div class="product-details">
+            <span class="product-category"><?php echo $row['product_category']; ?></span>
+            <h5 class="card-title"><?php echo $row['product_name']; ?></h5>
+        </div>
+        <div class="price_stock">
+            <h1 class="price_text">₱ <?php echo $row['price']; ?></h1>
+            <h1 class="stock_text">In stock x <?php echo $row['stock']; ?></h1>
+        </div>
+        
+    </div>
+</div> 
                                 </div>
                                
                     </div>
@@ -242,7 +234,7 @@ include_once './helpers/session_helper.php';
                                 <input type="text" class="form-control mb-3" name="usersEmail" placeholder="Email" autofocus="true"/>
                                 <br><br>
                                 <div id="button_container" class="text-center mt-3" name="submit">
-                                                    <button type="submit" button class="btn btn-primary">Receive Email</button>
+                                                    <button type="submit" button class="btn btn-primary">RECEIVE EMAIL</button>
 
                             </form>
                         </div>
